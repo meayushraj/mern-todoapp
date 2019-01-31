@@ -10,6 +10,9 @@ const Todo = props => (
         <td>
             <Link to={"/edit/" + props.todo._id}>Edit</Link>
         </td>
+        <td>
+            <Link to={"/delete/" + props.todo._id}>Delete</Link>
+        </td>
     </tr>
 )
 
@@ -40,13 +43,14 @@ export default class TodosList extends Component {
         return (
             <div>
                 <h3>Todos List</h3>
-                <table className="table table-striped" style={{ marginTop: 20 }} >
+                <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>
                             <th>Description</th>
                             <th>Responsible</th>
                             <th>Priority</th>
                             <th>Action</th>
+                            <th>Completed</th>
                         </tr>
                     </thead>
                     <tbody>
