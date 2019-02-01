@@ -29,7 +29,7 @@ export default class DeleteTodo extends Component {
     render() {
         return (
             <div>
-                <p>Welcome to Delete Todo Component!!</p>
+                <h1>Item Deleted !!</h1>
             </div>
         )
     }
